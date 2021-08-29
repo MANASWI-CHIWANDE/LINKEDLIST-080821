@@ -58,10 +58,10 @@ void DoublyLinkedlist::print()
         Node *current = head;
         while (current->getNextPtr() != NULL)
         {
-            cout << "( " << current->getPrevPtr() << "  ,  " << current->getData() << "  ,  " << current->getNextPtr() << " ) => ";
+            cout << "( " << current->getPrevPtr() << "  ,  " << current->getData() << "  ,  " << current->getNextPtr() << " ) <=> ";
             current = current->getNextPtr();
         }
-        cout << "( " << current->getPrevPtr() << "  ,  " << current->getData() << " , " << current->getNextPtr() << " ) = x " << endl;
+        cout << "( " << current->getPrevPtr() << "  ,  " << current->getData() << " , " << current->getNextPtr() << " ) <= x " << endl;
 
         cout << "\nFinished Printing \n"
              << endl;
