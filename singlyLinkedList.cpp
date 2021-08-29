@@ -54,7 +54,7 @@ void SinglyLinkedList::print(){
         cout<<"( "<< current->getData()<<" , " << current->getNextPtr() << " ) => ";
         current = current->getNextPtr();
     }
-    cout<<"( "<< current->getData()<<" , " << current->getNextPtr() << " ) = x "<<endl;
+    cout<<"( "<< current->getData()<<" , " << current->getNextPtr() << " )  = x "<<endl;
 
     cout<<"Finished Printing \n"<<endl;
 

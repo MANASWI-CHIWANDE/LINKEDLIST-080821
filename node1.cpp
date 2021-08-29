@@ -7,6 +7,7 @@ class Node
 private:
     int data;
     Node *nextPtr;
+    Node *prevPtr;
 
 public:
     Node();
@@ -19,7 +20,11 @@ public:
 
     Node* getNextPtr();
 
+    Node* getPrevPtr();
+
     void setNextPtr(Node *);
+
+    void setPrevPtr(Node *);
 
     void print();
 };
@@ -55,12 +60,23 @@ void Node::setNextPtr(Node * nextptr1){
 }
 
 
+void Node::setPrevPtr(Node * prevptr1){
+    prevPtr = prevptr1;
+}
+
+
 Node* Node::getNextPtr(){
     return nextPtr;
 }
 
 
+Node* Node::getPrevPtr(){
+    return prevPtr;
+}
+
+
 void Node::print(){
     cout<<"data = "<<data<<endl;
-    cout<<"pointer = "<< nextPtr<<endl;
+    cout<<"Previous pointer = "<< prevPtr<<endl;
+    cout<<"Next pointer     = "<<nextPtr<<endl;
 }
